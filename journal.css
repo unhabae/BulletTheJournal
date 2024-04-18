@@ -1,0 +1,15 @@
+/* Minimal reset: */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*CSS HEX*/
+:root {
+    --first: #ccb189;
+    --second: #f1ebe0;
+    --third: #2e1e0c;
+    --fourth: #8a8676;
+    --fifth: #5c6448;
+}
