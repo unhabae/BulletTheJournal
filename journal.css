@@ -1,3 +1,8 @@
+/*  G E N E R A L  */
+
+/*importerer bebas neue og montserrat*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* Minimal reset: */
 * {
     margin: 0;
@@ -7,9 +12,58 @@
 
 /*CSS HEX*/
 :root {
-    --first: #ccb189;
-    --second: #f1ebe0;
-    --third: #2e1e0c;
+    --melon: #E8B1AC;
+    --rose: #FFD7D7;
+    --champagne: #F7E3D7;
     --fourth: #8a8676;
     --fifth: #5c6448;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 70px;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+/*  N A V B A R  */
+nav {
+    position: fixed;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 10px 1px 2px 3px rgb(237, 235, 235);
+}
+
+nav img {
+    border-radius: 50%;
+    width: 50px;
 }
