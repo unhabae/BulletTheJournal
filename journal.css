@@ -1,7 +1,7 @@
 /*  G E N E R A L  */
 
 /*importerer bebas neue og montserrat*/
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 /* Minimal reset: */
 * {
@@ -12,24 +12,25 @@
 
 /*CSS HEX*/
 :root {
-    --melon: #E8B1AC;
-    --rose: #FFD7D7;
+    --pale: #DDBFB0;
+    --raw: #826255;
     --champagne: #F7E3D7;
-    --fourth: #8a8676;
-    --fifth: #5c6448;
+    --linen: #EFE5DC;
+    --white: #FFFFFF;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 h1,
 h2,
 h3,
 h4 {
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 70px;
+    font-family: "Playfair Display", serif;
+    font-size: 60px;
+    font-weight: 900;
 }
 
 img {
@@ -38,6 +39,7 @@ img {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 .container {
@@ -63,7 +65,29 @@ nav {
     box-shadow: 10px 1px 2px 3px rgb(237, 235, 235);
 }
 
+nav .flex {
+    justify-content: space-between;
+}
+
 nav img {
     border-radius: 50%;
     width: 50px;
+}
+
+.dot {
+    color: var(--pale);
+}
+
+.head_nav {
+    background-color: var(--pale);
+    padding: 10px;
+    border: solid 2px #cfb4a7;
+}
+
+.head_nav a {
+    color: white;
+}
+
+.head_nav:hover {
+    border-width: 3px;
 }
