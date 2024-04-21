@@ -40,13 +40,14 @@ h2 {
     font-size: 40px;
 }
 
-
-
 a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
+p {
+   line-height: 1.6; 
+}
 .container {
     max-width: 1000px;
     margin: 0 auto;
@@ -64,11 +65,14 @@ a {
 /*  N A V B A R  */
 nav {
     position: fixed;
-    color: white;
     width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
     border-bottom: solid linen 1px;
+}
+
+nav a {
+    color: white;
 }
 
 nav .flex {
@@ -90,10 +94,6 @@ nav img {
     border: solid 2px #cfb4a7;
 }
 
-.head_nav a {
-    color: white;
-}
-
 .head_nav:hover {
     border-width: 3px;
 }
@@ -106,5 +106,10 @@ header {
     height: 100vh;
     padding-top: 120px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(sea.jpg);
+    color: white;
+}
+
+header h1 {
+    padding-top: 150px;
 }
 
