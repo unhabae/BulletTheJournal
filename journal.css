@@ -29,17 +29,22 @@ h2,
 h3,
 h4 {
     font-family: "Playfair Display", serif;
-    font-size: 60px;
     font-weight: 900;
 }
 
-img {
-    width: 100%;
+h1 {
+    font-size: 60px;
 }
+
+h2 {
+    font-size: 40px;
+}
+
+
 
 a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .container {
@@ -59,10 +64,11 @@ a {
 /*  N A V B A R  */
 nav {
     position: fixed;
+    color: white;
     width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
-    box-shadow: 10px 1px 2px 3px rgb(237, 235, 235);
+    border-bottom: solid linen 1px;
 }
 
 nav .flex {
@@ -91,3 +97,14 @@ nav img {
 .head_nav:hover {
     border-width: 3px;
 }
+
+
+
+/* H E A D E R */
+
+header {
+    height: 100vh;
+    padding-top: 120px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(sea.jpg);
+}
+
