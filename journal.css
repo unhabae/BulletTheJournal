@@ -105,7 +105,7 @@ nav img {
 header {
     height: 100vh;
     padding-top: 120px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(sea.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(bilder/sea.jpg);
     color: white;
 }
 
