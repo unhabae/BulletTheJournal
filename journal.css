@@ -113,3 +113,47 @@ header h1 {
     padding-top: 150px;
 }
 
+
+
+/* TO DO PAGE */
+
+#todo .container{
+    padding-top: 50px;
+}
+
+#week {
+    padding-top: 120px;
+    display: flex;
+    width: 100%;
+}
+
+#week div {
+    height: 180px;
+    flex: 1;
+    border: solid 1px black;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.dayInput {
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+    margin: 8px 10px;
+    display: inline-block;
+    border: 2px solid var(--pale);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+i {
+    font-size: 40px;
+    padding: 5px;
+    color: var(--raw);
+}
+
+#todo button {
+    background-color: transparent;
+    border-style: none;
+}
