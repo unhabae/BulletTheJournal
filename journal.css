@@ -115,36 +115,22 @@ header h1 {
 
 
 
-/* TO DO PAGE */
+/*  J O U R N A L  */
 
 #todo .container{
     padding-top: 50px;
 }
 
-#week {
-    padding-top: 120px;
-    display: flex;
-    width: 100%;
-}
-
-#week div {
-    height: 180px;
-    flex: 1;
-    border: solid 1px black;
-    margin: 5px;
-    padding: 5px;
-    border-radius: 10px;
-}
-
 .dayInput {
     width: 100%;
-    height: 300px;
+    height: 270px;
     padding: 20px;
     margin: 8px 10px;
     display: inline-block;
-    border: 2px solid var(--pale);
+    border: 2px solid rgb(199, 198, 198);
     border-radius: 4px;
     box-sizing: border-box;
+    margin-bottom: 40px;
 }
 
 i {
@@ -156,4 +142,31 @@ i {
 #todo button {
     background-color: transparent;
     border-style: none;
+}
+
+
+
+#week {
+    padding-top: 120px;
+    width: 100%;
+}
+
+#week .container {
+    display: flex;
+    padding-top: 50px;
+    gap: 10px;
+}
+
+#week .container div {
+    height: 34px;
+    flex: 1;
+    border: solid 2px #7f8da1;
+    background-color: #d2ddeb;
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+#week .container div:hover {
+    border-width: 3px;
 }
