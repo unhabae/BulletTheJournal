@@ -37,11 +37,16 @@
 
     <section id="todo">
         <div class="container">
-            <p>Write about your day...</p>
+            <p class="head">Write about your day...</p>
             <textarea name="day" class="dayInput">
             </textarea>
-
-            <p>Select your mood:
+            <div id="suggestions">
+                <p>Unsure what to write about? Try our suggestions: </p>
+                <button onclick="generateQuestions()" class="button">Generate suggestions</button>
+                <div id="displayQuestion"></div>
+            </div>
+            
+            <p class="head">Select your mood:
             <p>
             <div id="mood">
                 <i class="fa-regular fa-face-laugh-beam" onclick="activateMood(this)"></i>
@@ -52,7 +57,7 @@
                 <i class="fa-regular fa-face-sad-tear" onclick="activateMood(this)"></i>
             </div>
 
-            <button id="submitButton">SUBMIT</button>
+            <button class="button submit">SUBMIT</button>
         </div>
     </section>
 

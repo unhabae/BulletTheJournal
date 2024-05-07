@@ -116,6 +116,9 @@ header h1 {
 
 
 /*  J O U R N A L  */
+.head {
+    font-weight: bolder;
+}
 
 #todo .container{
     padding-top: 50px;
@@ -130,8 +133,17 @@ header h1 {
     border: 2px solid rgb(199, 198, 198);
     border-radius: 4px;
     box-sizing: border-box;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
 }
+
+#suggestions {
+    margin-bottom: 30px;
+}
+
+#suggestions p {
+    margin-bottom: 15px;
+}
+
 
 #mood {
     margin-bottom: 50px;
@@ -147,11 +159,19 @@ header h1 {
     font-weight: bold;
 }
 
-#submitButton {
-    background-color: var(--pale);
+.button {
+    background-color: #7f8da1;
     padding: 10px;
-    border: solid 2px #cfb4a7;
+    border: solid 2px #7f8da1;
     color: white;
+    margin-bottom: 15px;
+}
+
+.button:hover {
+    border-width: 3px;
+}
+
+.submit {
     font-size: 25px;
 }
 
