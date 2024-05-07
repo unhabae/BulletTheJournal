@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +10,13 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
+
 <body>
     <nav style="background-color: #7f8da1;">
         <div class="flex container">
             <div class="flex">
                 <img src="bilder/logo.png" alt="logo">
-                <a href="journal.html">
+                <a href="index.html">
                     <h1>Bullet<span class="dot">.</span></h1>
                 </a>
             </div>
@@ -39,27 +41,18 @@
             <textarea name="day" class="dayInput">
             </textarea>
 
-            <p>Select your mood: <p>
-            <div>
-                <button>
-                    <i class="fa-regular fa-face-laugh-beam"></i>
-                </button>
-                <button>
-                    <i class="fa-regular fa-face-smile-beam"></i>
-                </button>
-                <button>
-                    <i class="fa-regular fa-face-smile"></i>
-                </button>
-                <button>
-                    <i class="fa-regular fa-face-meh"></i>
-                </button>
-                <button>
-                    <i class="fa-regular fa-face-frown-open"></i>
-                </button>
-                <button>
-                    <i class="fa-regular fa-face-sad-tear"></i>
-                </button>
+            <p>Select your mood:
+            <p>
+            <div id="mood">
+                <i class="fa-regular fa-face-laugh-beam" onclick="activateMood(this)"></i>
+                <i class="fa-regular fa-face-smile-beam" onclick="activateMood(this)"></i>
+                <i class="fa-regular fa-face-smile" onclick="activateMood(this)"></i>
+                <i class="fa-regular fa-face-meh" onclick="activateMood(this)"></i>
+                <i class="fa-regular fa-face-frown-open" onclick="activateMood(this)"></i>
+                <i class="fa-regular fa-face-sad-tear" onclick="activateMood(this)"></i>
             </div>
+
+            <button id="submitButton">SUBMIT</button>
         </div>
     </section>
 
@@ -68,4 +61,5 @@
 
     <script src="journal.js"></script>
 </body>
+
 </html>

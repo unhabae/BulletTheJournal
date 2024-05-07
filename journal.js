@@ -19,3 +19,18 @@ const today = document.getElementById(date.getDay())
 today.style.backgroundColor = "#7f8da1"
 today.style.color = "white"
 
+
+
+
+// W R I T E
+let questions = ["What are you grateful for today?", "What did you learn today?", "Did you accomplish everything you wanted to today?", "What is something that distracted you or slowed your progress today?", "Did I take enough breaks today?", "What was the highlight of your day?", "Did you work on something that you're passionate about today?"]
+
+
+
+
+
+// M O O D
+function activateMood(x) {
+    x.classList.toggle("fa-solid")
+}
+

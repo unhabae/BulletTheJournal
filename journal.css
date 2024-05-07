@@ -133,15 +133,26 @@ header h1 {
     margin-bottom: 40px;
 }
 
-i {
+#mood {
+    margin-bottom: 50px;
+}
+
+#todo i {
     font-size: 40px;
     padding: 5px;
     color: var(--raw);
 }
 
-#todo button {
-    background-color: transparent;
-    border-style: none;
+#todo i:hover {
+    font-weight: bold;
+}
+
+#submitButton {
+    background-color: var(--pale);
+    padding: 10px;
+    border: solid 2px #cfb4a7;
+    color: white;
+    font-size: 25px;
 }
 
 
