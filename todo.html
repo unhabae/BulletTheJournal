@@ -38,7 +38,7 @@
     <section id="todo">
         <div class="container">
             <p class="head">Write about your day...</p>
-            <textarea name="day" class="dayInput">
+            <textarea name="day" id="dayInput">
             </textarea>
             <div id="suggestions">
                 <p>Unsure what to write about? Try our suggestions: </p>
@@ -49,15 +49,15 @@
             <p class="head">Select your mood:
             <p>
             <div id="mood">
-                <i class="fa-regular fa-face-laugh-beam" onclick="activateMood(this)"></i>
-                <i class="fa-regular fa-face-smile-beam" onclick="activateMood(this)"></i>
-                <i class="fa-regular fa-face-smile" onclick="activateMood(this)"></i>
-                <i class="fa-regular fa-face-meh" onclick="activateMood(this)"></i>
-                <i class="fa-regular fa-face-frown-open" onclick="activateMood(this)"></i>
-                <i class="fa-regular fa-face-sad-tear" onclick="activateMood(this)"></i>
+                <i class="fa-regular fa-face-laugh-beam" onclick="activateMood(this)" id="superhappy"></i>
+                <i class="fa-regular fa-face-smile-beam" onclick="activateMood(this)" id="happy"></i>
+                <i class="fa-regular fa-face-smile" onclick="activateMood(this)" id="glad"></i>
+                <i class="fa-regular fa-face-meh" onclick="activateMood(this)" id="neutral"></i>
+                <i class="fa-regular fa-face-frown-open" onclick="activateMood(this)" id="sad"></i>
+                <i class="fa-regular fa-face-sad-tear" onclick="activateMood(this)" id="supersad"></i>
             </div>
 
-            <button class="button submit">SUBMIT</button>
+            <button class="button submit" onclick="gatherInput()">SUBMIT</button>
         </div>
     </section>
 

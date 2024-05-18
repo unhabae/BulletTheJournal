@@ -48,6 +48,7 @@ a {
 p {
    line-height: 1.6; 
 }
+
 .container {
     max-width: 1000px;
     margin: 0 auto;
@@ -116,6 +117,61 @@ header h1 {
 
 
 /*  J O U R N A L  */
+#week {
+    padding-top: 120px;
+    width: 100%;
+}
+
+#week .container:first-of-type {
+    display: flex;
+    padding-top: 50px;
+    gap: 10px;
+}
+
+#week .container div {
+    height: 35px;
+    border: solid 2px #7f8da1;
+    background-color: #d2ddeb;
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+
+
+#weekDiv {
+    display: grid;
+    grid-template-rows: 40px 40px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding-top: 50px;
+}
+
+#week #displayWindow {
+    position: absolute;
+    min-height: 300px;
+    max-width: 1000px;
+    border: solid 2px rgb(199, 198, 198);
+    background-color: white;
+    padding: 15px;
+}
+
+#week #displayWindow h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+}
+#week #displayWindow p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
 .head {
     font-weight: bolder;
 }
@@ -124,7 +180,7 @@ header h1 {
     padding-top: 50px;
 }
 
-.dayInput {
+#dayInput {
     width: 100%;
     height: 270px;
     padding: 20px;
@@ -173,31 +229,4 @@ header h1 {
 
 .submit {
     font-size: 25px;
-}
-
-
-
-#week {
-    padding-top: 120px;
-    width: 100%;
-}
-
-#week .container {
-    display: flex;
-    padding-top: 50px;
-    gap: 10px;
-}
-
-#week .container div {
-    height: 34px;
-    flex: 1;
-    border: solid 2px #7f8da1;
-    background-color: #d2ddeb;
-    margin: 5px;
-    padding: 5px 10px;
-    border-radius: 20px;
-}
-
-#week .container div:hover {
-    border-width: 3px;
 }
