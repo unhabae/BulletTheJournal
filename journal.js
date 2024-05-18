@@ -13,7 +13,7 @@ for (let i = 0; i < 14; i++) {
     day.setDate(day.getDate() - (6 + day.getDay() - i))
 
     const div = document.createElement("div")
-    div.innerHTML = weekdays[day.getDay()] + " - " + day.getDate() + "/" + (day.getMonth()+1)
+    div.innerHTML = weekdays[day.getDay()] + " - " + day.getDate() + "/" + (day.getMonth() + 1)
     weekElm.appendChild(div)
 
     // Formater datoen som 'YYYY-MM-DD'
@@ -84,7 +84,7 @@ function getLogContent() {
         if (htmlElm) {
             console.log(htmlElm)
             // Funksjon som viser data når du trykker på diven: 
-            htmlElm.addEventListener("click", ()=>{
+            htmlElm.addEventListener("click", () => {
                 // Henter JSON-dataene fra Local Storage
                 const value = localStorage.getItem(key);
                 // Konverter tekststrengen til et JSON
@@ -94,12 +94,12 @@ function getLogContent() {
                 // DISPLAY WINDOW 
                 const displayWindow = document.createElement("div")
                 displayWindow.setAttribute("id", "displayWindow")
-                
+
                 // legger til tittel
                 const title = document.createElement("h2")
                 title.innerHTML = "Your journal for " + key + ":"
                 displayWindow.appendChild(title)
-                
+
                 // legger til input
                 const divInput = document.createElement("p")
                 divInput.innerHTML = "What you wrote: " + storedJsonData.text
@@ -113,14 +113,14 @@ function getLogContent() {
                 // legger til close-button
                 const close = document.createElement("button")
                 close.innerHTML = " Close window "
-                close.addEventListener("click", ()=> {
+                close.addEventListener("click", () => {
                     displayWindow.style.display = 'none'
                 })
-                displayWindow.appendChild(close )
+                displayWindow.appendChild(close)
 
                 weekElm.appendChild(displayWindow)
 
-            
+
             })
         }
 

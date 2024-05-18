@@ -46,7 +46,7 @@ a {
 }
 
 p {
-   line-height: 1.6; 
+    line-height: 1.6;
 }
 
 .container {
@@ -115,12 +115,12 @@ header h1 {
 }
 
 header .head_nav {
-    width: fit-content; 
+    width: fit-content;
     margin-top: 40px;
 }
 
-header .head_nav a{
-    width: fit-content; 
+header .head_nav a {
+    width: fit-content;
     color: white;
 }
 
@@ -170,6 +170,7 @@ header .head_nav a{
     margin-bottom: 10px;
     margin-right: 50px;
 }
+
 #week #displayWindow p {
     font-size: 20px;
     margin-bottom: 10px;
@@ -186,7 +187,7 @@ header .head_nav a{
     font-weight: bolder;
 }
 
-#todo .container{
+#todo .container {
     padding-top: 50px;
 }
 
@@ -250,6 +251,7 @@ header .head_nav a{
     #week .container div {
         height: 55px;
     }
+
     #weekDiv {
         grid-template-rows: 60px 60px;
     }
@@ -259,6 +261,7 @@ header .head_nav a{
     #week .container div {
         height: 70px;
     }
+
     #weekDiv {
         grid-template-rows: 75px 75px;
     }
