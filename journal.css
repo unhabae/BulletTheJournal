@@ -114,6 +114,16 @@ header h1 {
     padding-top: 150px;
 }
 
+header .head_nav {
+    width: fit-content; 
+    margin-top: 40px;
+}
+
+header .head_nav a{
+    width: fit-content; 
+    color: white;
+}
+
 
 
 /*  J O U R N A L  */
@@ -229,4 +239,31 @@ header h1 {
 
 .submit {
     font-size: 25px;
+}
+
+
+
+
+
+/* M E D I A  Q U E R I E S */
+@media only screen and (max-width: 800px) {
+    #week .container div {
+        height: 55px;
+    }
+    #weekDiv {
+        grid-template-rows: 60px 60px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #week .container div {
+        height: 70px;
+    }
+    #weekDiv {
+        grid-template-rows: 75px 75px;
+    }
+
+    header p {
+        display: none;
+    }
 }
